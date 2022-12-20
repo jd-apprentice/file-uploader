@@ -69,8 +69,8 @@ $(ColorBlue 'Choose an option:') "
         case $a in
 	        1) upload_file ; menu ;;
 	        2) about ; menu ;;
-		    0) exit 0 ;;
-		    *) echo -e $red"Wrong option."$clear; WrongCommand;;
+		0) exit 0 ;;
+		*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac
 }
 
