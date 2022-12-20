@@ -6,7 +6,7 @@
 
 function ask_file() {
     echo ""
-	echo -ne "Give the path to your file\n-> "
+    echo -ne "Give the path to your file\n-> "
     read file
 }
 
