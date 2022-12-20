@@ -2,6 +2,13 @@
 
 ![AnonImage](https://anonfiles.com/static/logo.png#center)
 
+<style>
+img[src*='#center'] {
+display: block;
+margin: auto;
+}
+</style>
+
 - This CLI application is intended to be used for uploading files from the terminal with a simple menu
 - If you really like this service, you should conside contribute to `anonfiles` since is thanks to them that I can do this.
 - CLI inspired by this post by [Bobby Iliev](https://devdojo.com/bobbyiliev/how-to-create-an-interactive-menu-in-bash)
@@ -62,12 +69,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
-<!-- STYLES -->
-
-<style>
-img[src*='#center'] {
-display: block;
-margin: auto;
-}
-</style>
