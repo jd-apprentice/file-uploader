@@ -13,7 +13,7 @@ function ask_file() {
 function upload_file() {
     echo ""
     ask_file
-    curl -F "file=@$file" https://api.anonfiles.com/upload | jq . > response.json
+    curl -F "file=@$file" https://api.anonfiles.com/upload | jq . >response.json
     chmod +x ./main.py
     echo "Your file is uploaded successfully, here is the url: \n-> "
     ./main.py
@@ -41,19 +41,19 @@ clear='\e[0m'
 # Color Functions
 ##
 
-ColorGreen(){
-	echo -ne $green$1$clear
+ColorGreen() {
+    echo -ne $green$1$clear
 }
-ColorBlue(){
-	echo -ne $blue$1$clear
+ColorBlue() {
+    echo -ne $blue$1$clear
 }
 
 ##
 # Menu Functions
 ##
 
-menu(){
-echo -ne "
+menu() {
+    echo -ne "
 
      \                          ____| _)  |             
     _ \    __ \    _ \   __ \   |      |  |   _ \   __| 
@@ -65,13 +65,22 @@ $(ColorGreen '1)') Upload file
 $(ColorGreen '2)') About
 $(ColorGreen '0)') Exit
 $(ColorBlue 'Choose an option:') "
-        read a
-        case $a in
-	        1) upload_file ; menu ;;
-	        2) about ; menu ;;
-		0) exit 0 ;;
-		*) echo -e $red"Wrong option."$clear; WrongCommand;;
-        esac
+    read a
+    case $a in
+    1)
+        upload_file
+        menu
+        ;;
+    2)
+        about
+        menu
+        ;;
+    0) exit 0 ;;
+    *)
+        echo -e $red"Wrong option."$clear
+        WrongCommand
+        ;;
+    esac
 }
 
 # Call the menu function
