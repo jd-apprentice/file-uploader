@@ -1,13 +1,6 @@
 # 🖤 file-uploader for anonfiles
 
-![AnonImage](https://anonfiles.com/static/logo.png#center)
-
-<style>
-img[src*='#center'] {
-display: block;
-margin: auto;
-}
-</style>
+![AnonImage](https://anonfiles.com/static/logo.png)
 
 - This CLI application is intended to be used for uploading files from the terminal with a simple menu
 - If you really like this service, you should conside contribute to `anonfiles` since is thanks to them that I can do this.
