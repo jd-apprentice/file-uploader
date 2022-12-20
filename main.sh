@@ -13,7 +13,7 @@ function ask_file() {
 function upload_file() {
     echo ""
     ask_file
-	curl -F "file=@$file" https://api.anonfiles.com/upload | jq . > response.json
+    curl -F "file=@$file" https://api.anonfiles.com/upload | jq . > response.json
     chmod +x ./main.py
     echo "Your file is uploaded successfully, here is the url: \n-> "
     ./main.py
