@@ -1,6 +1,6 @@
 # 🖤 file-uploader for anonfiles
 
-![AnonImage](https://anonfiles.com/static/logo.png)
+![AnonImage](https://anonfiles.com/static/logo.png#center)
 
 - This CLI application is intended to be used for uploading files from the terminal with a simple menu
 - If you really like this service, you should conside contribute to `anonfiles` since is thanks to them that I can do this.
@@ -62,3 +62,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+<!-- STYLES -->
+
+<style>
+img[src*='#center'] {
+display: block;
+margin: auto;
+}
+</style>
